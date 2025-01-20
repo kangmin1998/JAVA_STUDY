@@ -10,5 +10,8 @@ public class Application1 {
         */
 
 
+        int secondNum = 20;
+        int result2 = ++secondNum * 3;
+        System.out.println(result2);
     }
 }
