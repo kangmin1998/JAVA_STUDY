@@ -1,4 +1,4 @@
-package com.ohgiraffers.section02.variable;
+package chap01.com.section02.variable;
 
 public class Application2 {
     public static void main(String[] args) {

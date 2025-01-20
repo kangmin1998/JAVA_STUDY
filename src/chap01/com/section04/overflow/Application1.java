@@ -1,6 +1,6 @@
-package com.ohgiraffers.section04.overflow;
+package chap01.com.section04.overflow;
 
-public class Application {
+public class Application1 {
     public static void main(String[] args) {
         /*
             오버플로우

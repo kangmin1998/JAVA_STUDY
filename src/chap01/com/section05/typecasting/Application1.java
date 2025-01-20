@@ -1,4 +1,4 @@
-package com.ohgiraffers.section05.typecasting;
+package chap01.com.section05.typecasting;
 
 public class Application1 {
     public static void main(String[] args) {
