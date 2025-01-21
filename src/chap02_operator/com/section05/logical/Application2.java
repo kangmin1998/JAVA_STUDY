@@ -1,4 +1,4 @@
-package chap02_operator.com.section5.logical;
+package chap02_operator.com.section05.logical;
 
 public class Application2 {
     public static void main(String[] args) {

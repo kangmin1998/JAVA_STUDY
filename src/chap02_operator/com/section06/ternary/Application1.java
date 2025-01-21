@@ -1,4 +1,4 @@
-package chap02_operator.com.section6.ternary;
+package chap02_operator.com.section06.ternary;
 
 public class Application1 {
     public static void main(String[] args) {
