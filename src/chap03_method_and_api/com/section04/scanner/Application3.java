@@ -14,7 +14,7 @@ public class Application3 {
         String str = sc.next();
         System.out.println("Str : " + str);
 
-        sc.nextLine();
+        sc.nextLine(); // 넣는 유는 마지막에 공백이 생겼는데 공백을 없애기 위해 쓴다.
 
         System.out.print("숫자를 입력하세요 : " );
         int num = sc.nextInt();
