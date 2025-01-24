@@ -41,7 +41,7 @@ public class practice_08 {
         int[] arr = new int[4];
 
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int) (Math.random() * 10) ;
+            arr[i] = (int) (Math.random() * 10);
             for (int j = 0; j < i; j++) {
                 if (arr[i] == arr[j]) {
                     i--;
@@ -51,59 +51,42 @@ public class practice_08 {
         }
         System.out.println("발생한 난수" + Arrays.toString(arr));
 
-
-        Scanner sc = new Scanner(System.in);
-        System.out.print("숫자를 입력하세요 : ");
-        String num = sc.nextLine();
-
-
-        int[] num1 = new int[num.length()];
-        for (int i = 0; i < num1.length; i++) {
-            num1[i] = num.charAt(i) - '0' ;
-
-        }
-        System.out.println(Arrays.toString(num1));
-
-        int a = 0;
-        int b = 0;
-
-        int  strike = 0;
+        int strike = 0;
         int ball = 0;
+        int count = 10;
+
+        while (count != 0 ) {
+
+            Scanner sc = new Scanner(System.in);
+            System.out.println(count + " 회 남으셨습니다.");
+            System.out.print("숫자를 입력하세요 : ");
+            String num = sc.nextLine();
 
 
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == num1[i]) {  // 자리와 숫자가 모두 맞는 경우
-                strike++;
-            } else if (contains(num1, arr[i])) {  // 숫자는 맞지만 자리가 다른 경우
-                ball++;
+            int[] num1 = new int[num.length()];
+
+            for (int i = 0; i < num1.length; i++) {
+                num1[i] = num.charAt(i) - '0';
             }
+            System.out.println(Arrays.toString(num1));
+
+
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] == num1[i]) {  // 자리와 숫자가 모두 맞는 경우
+                    strike++;
+                }
+                else {
+                    for (int j = 0; j < arr.length; j++) {
+                        if (arr[i] == num1[j]) {
+                            ball++;
+                            break;
+                        }
+                    }
+                }
+            }
+            count--;
+            System.out.println("아쉽네요" + strike + "S" + " " + ball + "B 입니다.");
         }
 
-
-//        for(int i =0; i < arr.length; i++) {
-//            a = arr[i];
-//                b = num1[j];
-//            }
-//            if (a == b) {
-//                st++;
-//            }
-//        }
-//
-//        if(arr == num1)
-//        {
-//            bal++;
-//        }
-//
-        System.out.println("아쉽네요" + strike + "S" + " " + ball + "B 입니다." );
-
-        sc.close();
-    }
-    public static boolean contains(int[] array, int value) {
-        for (int num : array) {
-            if (num == value) {
-                return true;
-            }
-        }
-        return false;
     }
 }
