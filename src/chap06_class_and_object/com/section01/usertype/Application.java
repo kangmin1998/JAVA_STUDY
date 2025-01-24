@@ -1,5 +1,7 @@
 package chap06_class_and_object.com.section01.usertype;
 
+import java.util.Arrays;
+
 public class Application {
     public static void main(String[] args) {
 
@@ -32,7 +34,37 @@ public class Application {
         /* [ 객체(instance) 생성 구문 ] */
         /*
             자료형 변수면 = new 클래스명();
+            사용자 정의 자료형인 클래스를 이용하기 위해서는 new 연산자로 heap 영역에 할당해야 한다.
+            객체를 생성하게 되면 클래스에 정의한 필드와 메소드 대로 객체(instance)가 생성 된다.
          */
         Member member = new Member();
+
+        /* [필드에 접근하기 위해서는 레퍼런스변수명. 으로 접근한다.] */
+        /*
+            '.'은 참조 연산자라고 하는데, 레퍼런스 변수가 참조하는 주소로 접근한다는 의미를 가진다.
+         */
+
+        System.out.println("Member.id : " + member.id);
+        System.out.println("Member.pwd : " + member.pwd);
+        System.out.println("Member.name : " + member.name);
+        System.out.println("Member.age : " + member.age);
+        System.out.println("Member.gender : " + member.gender);
+        System.out.println("Member.hobby : " + member.hobby);
+
+        /* 필드에 접근해서 값 대입 */
+        member.id = "user01";
+        member.pwd = "pass01";
+        member.name = "판다";
+        member.age = 20;
+        member.gender = '남';
+        member.hobby = new String[] {"축구", "볼링", "당구"};
+
+        System.out.println("Member.id : " + member.id);
+        System.out.println("Member.pwd : " + member.pwd);
+        System.out.println("Member.name : " + member.name);
+        System.out.println("Member.age : " + member.age);
+        System.out.println("Member.gender : " + member.gender);
+        System.out.println("Member.hobby : " + Arrays.toString(hobby));
+
     }
 }
