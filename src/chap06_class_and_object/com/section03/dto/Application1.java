@@ -12,6 +12,13 @@ public class Application1 {
         private 필드와 필드값을 수정하는 설정자(setter), 필드에 접근하는 접근자(getter)들로 구성된다.
         주로 계층간 데이터를 주고 받을 목적으로 사용한다.
      */
+        /* ★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆
+            ※ 객체 지향
+            1. 캡슐화
+            2. 추상화
+            3. 상속
+            4. 다형성
+         ★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆ */
 
         MemberDTO memberDTO = new MemberDTO();
 

@@ -69,7 +69,7 @@ public class Application1 {
                     break label;
                 default:
                     System.out.println("잘못 된 번호를 선택 하셨습니다.");
-            sc.close();
+                    sc.close();
             }
         }
     }
