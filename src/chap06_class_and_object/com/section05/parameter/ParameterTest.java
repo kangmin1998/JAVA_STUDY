@@ -32,6 +32,7 @@ public class ParameterTest {
         r.calcArea();
         r.calcRound();
     }
+
     /* 매개 변수가 몇 개 전달 될 지 알 수 없으므로 반드시 매개변수 목록의 가장 뒤에 작성해야 한다. */
     // 가변인자 " ... " 는 배열로 사용 , 가변인자는 가장 마지막에 작성을 해야한다.
     public void testVariableLengthArrayParameter(String name, String... hobby) {
