@@ -8,9 +8,8 @@ public class Application {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         StudentDTO[] studentDTOS = new StudentDTO[10];
-        int num;
         int num1 = 0;
-        while (num1 != 2) {
+        while (num1 < 10) {
             System.out.print("학년 : ");
             int gra = sc.nextInt();
             System.out.print("반 : ");
@@ -23,9 +22,7 @@ public class Application {
             int en = sc.nextInt();
             System.out.print("수학점수 : ");
             int ma = sc.nextInt();
-            // System.out.println("계속 추가할 겁니까 ? (y/n)");
-            // num = sc.nextInt();
-            studentDTOS[0] = new StudentDTO(gra, clas, nam, ko, en, ma);
+            studentDTOS[num1] = new StudentDTO(gra, clas, nam, ko, en, ma);
             num1++;
 
             System.out.print("계속 추가할 겁니까 ? (y/n): ");
@@ -33,14 +30,12 @@ public class Application {
             if (continueInput.equalsIgnoreCase("n")) {
                 break;
             }
-
-
         }
-
-
         System.out.println(" ====== 학생정보 ====== ");
-        for (StudentDTO studentDTO : studentDTOS) {
-            System.out.println(studentDTO.getInformation());
+        for (int i = 0; i < studentDTOS.length; i++) {
+            if (studentDTOS[i] != null) {
+                System.out.println(studentDTOS[i].getInformation());
+            }
         }
 
     }
