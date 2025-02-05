@@ -1,4 +1,4 @@
-package chap09_api.com.section02.stringbuilder;
+package chap09_api.com.section03.stringbuilder;
 
 public class Application1 {
     public static void main(String[] args) {

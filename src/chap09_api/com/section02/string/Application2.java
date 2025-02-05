@@ -1,4 +1,4 @@
-package chap09_api.com.section01.string;
+package chap09_api.com.section02.string;
 
 public class Application2 {
     public static void main(String[] args) {
