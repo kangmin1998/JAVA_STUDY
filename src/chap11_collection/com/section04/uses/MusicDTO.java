@@ -2,6 +2,7 @@ package chap11_collection.com.section04.uses;
 
 public class MusicDTO {
 
+    private static  int nextId = 1;
     private int id;
     private String artist;
     private String title;
@@ -10,6 +11,7 @@ public class MusicDTO {
     }
 
     public MusicDTO(String artist, String title) {
+        this.id = MusicDTO.nextId++;
         this.artist = artist;
         this.title = title;
     }

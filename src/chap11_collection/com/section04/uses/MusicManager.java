@@ -37,6 +37,45 @@ public class MusicManager {
         return musicList;
     }
 
-    /* [ 곡 전체 조회 ] */
+    /* [ 가수명 조회 ] */
+    public List<MusicDTO> searchArtist(String artist) {
+        List<MusicDTO> searchArt = new ArrayList<>();
+
+        for (int i = 0; i < musicList.size(); i++) {
+            if (musicList.get(i).getArtist().contains(artist)) {
+                searchArt.add(musicList.get(i));
+            }
+        }
+        return searchArt;
+
+    }
+
+    /* [ 제목 조회 ] */
+    public List<MusicDTO> searchTitle(String title) {
+        List<MusicDTO> searchTit = new ArrayList<>();
+
+
+        for(int i = 0; i < musicList.size(); i++) {
+            if (musicList.get(i).getArtist().contains(title)) {
+                searchTit.add(musicList.get(i));
+            }
+        }
+        return searchTit;
+    }
+
+    /* [ 곡 수정 ] */
+    public boolean updateMusic(MusicDTO updateMusic) {
+        List<MusicDTO> aaa = new ArrayList<>();
+        for(MusicDTO music : musicList) {
+            if ()
+        }
+        return false;
+    }
+
+    /* [ 곡 제거 ] */
+    public boolean removeMusic(int id) {
+        return false;
+    }
+
 
 }
