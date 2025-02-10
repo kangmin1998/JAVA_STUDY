@@ -110,6 +110,15 @@ public class MusicMenu {
         }
     }
 
+//    public void updateMusic() {
+//        System.out.print("수정할 ID를 입력 : ");
+//        int id1 = sc.nextInt();
+//        System.out.print("수정할 가수이름 : ");
+//        String artist1 = sc.nextLine();
+//        System.out.print("수정할 가수이름 : ");
+//        String title1 = sc.nextLine();
+//    }
+
     public void updateMusic() {
         // 곡 전체 보여주기
         List<MusicDTO> musicList = musicManager.selectList();

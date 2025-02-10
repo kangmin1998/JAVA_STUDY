@@ -67,7 +67,7 @@ public class MusicManager {
     public boolean updateMusic(MusicDTO updateMusic) {
         List<MusicDTO> aaa = new ArrayList<>();
         for(MusicDTO music : musicList) {
-            if ()
+
         }
         return false;
     }
